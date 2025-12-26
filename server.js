@@ -24,14 +24,14 @@ app.post('/api/chat', async (req, res) => {
     const { prompt } = req.body;
 
     if (!prompt) {
-        return res.status(400).json({ resposta: 'Prompt obrigatório.' });
+        return res.status(400).json({ resposta: 'Mensagem vazia.' });
     }
 
     try {
         const response = await client.chat.completions.create({
             model: "gpt-4o-mini",
             messages: [
-                { role: "system", content: "Você é o assistente JARVIS." },
+                { role: "system", content: "Você é o JARVIS, um assistente inteligente, educado e conciso." },
                 { role: "user", content: prompt }
             ]
         });
@@ -49,3 +49,4 @@ app.post('/api/chat', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`🚀 Servidor JARVIS ativo em http://localhost:${PORT}`);
 });
+
