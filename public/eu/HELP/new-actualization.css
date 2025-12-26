@@ -1,0 +1,27 @@
+
+
+.wrapper-act{
+    background: linear-gradient(135deg, #fff, #568cf0f3);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    width:800px;
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.toggle-container-act{
+    width: 50%;
+    background: linear-gradient(to bottom right, #568cf0f3,);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h2{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
