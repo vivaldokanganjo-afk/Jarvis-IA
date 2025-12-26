@@ -25,4 +25,5 @@ function p3(){
 
 function p4(){
     window.location.href = "./ABOUT US/about.html";
+
 }
