@@ -27,3 +27,10 @@ function p4(){
     window.location.href = "./ABOUT US/about.html";
 
 }
+
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        const nome = user.displayName || "Usuário";
+        document.getElementById("user-name").innerText = nome;
+    }
+});
