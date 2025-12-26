@@ -1,0 +1,100 @@
+
+/* container de Login branco*/
+.form-container{
+    width: 50%;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.form-container h2{
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* inputs de email e password da leta de login */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+}
+
+/* o foco, dos botões de input password e email */
+.form-container input:focus{
+    border: 2px solid #764ba2;
+    outline: none;
+}
+
+.form-container button.submit-btn{
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    /*background: linear-gradient(to right, #667eea, #764ba2);*/
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/*.form-container button.submit-btn:hover{
+    ackground: linear-gradient(to left, #667eea, #764ba2);
+}*/
+
+/* botão Criar - da tela de Login */
+.toggle-container button.switch-btn{
+    padding: 8px 1px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 5px;
+    border: 2px solid white;
+}
+
+/* mensagem de erro */
+.error{
+    color: white;
+    background: red;
+    display: none;
+}
+
+/* opacidade dos botões desabilitados */
+.forgot-password[disabled]{
+    opacity: 0.7;
+}
+
+.loading{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading label{
+    font-size: 24px;
+}
+
+a button{
+
+    width: auto;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin-right: 90%;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    border-radius: 10px;
+    cursor: pointer;
+}

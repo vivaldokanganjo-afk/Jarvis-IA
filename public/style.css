@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ececf1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    box-shadow: rgb(233, 220, 220) 0 0 20px;
+}
+
+/*Titulo*/
+h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+header button {
+    width: auto;
+}
+
+.prf-header{
+    box-shadow: black 0 0 20px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #333;
+    margin: auto;
+}
+
+/*Area do chat*/
+#chat{
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*Estilo das mensagens*/
+.message{
+    background-color: #444654;
+    padding: 12px 16px;
+    border-radius: 10px ;
+    max-width: 70%;
+    line-height: 1.5;
+}
+
+.user{
+    align-self: flex-end;
+    width: auto;
+    color: white;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    cursor: pointer;
+}
+
+.bot{
+    align-self: flex-start;
+}
+
+
+/*Area de entrada de texto*/
+/*
+#manual_input{
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #568cf0f3;
+    background-color: #568cf0f3;
+}
+*/
+
+
+/* area de digitar pergunta */
+/*
+#manual-input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    outline: none;
+    background-color: #53545e;
+    color: #fff;
+}
+*/
+
+
+
+#btn-start{
+    padding: 10px 20px;
+    margin: 0;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    color: white;
+}
+
+#btn-start:hover{
+    background: linear-gradient(135deg, #3d404dad, #568cf0f3);
+}
+
+#start-btn{
+    padding: 10px 20px;
+    margin: 0;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    color: white;
+}
+
+#start-btn:hover{
+    background: linear-gradient(135deg, #3d404dad, #568cf0f3);
+}
+
+#voice-btn{
+    padding: 10px 20px;
+    margin: 0;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    color: white;
+}
+
+#voice-btn:hover{
+    background: linear-gradient(135deg, #3d404dad, #568cf0f3);
+}
+
+
+a button{
+
+    width: auto;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin-right: 90%;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.out{
+    margin: 5px;
+    width: auto;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.out-inp{
+    margin: 5px;
+    width: auto;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    border-radius: 10px;
+}
+
+button:hover{
+    background: linear-gradient(135deg, #3d404dad, #568cf0f3);
+}
+
+a{
+    width: auto;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    border-radius: 10px;
+    cursor: pointer; 
+    display: flex;
+    flex-wrap: row wrap;
+    margin: 5px;
+}
+
+h4{
+    text-align: center;
+    margin-top: 60%;
+}

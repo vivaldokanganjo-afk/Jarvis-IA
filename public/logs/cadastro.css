@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #568cf0f3, #3d404dad);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* cantainer de login geral - branco e roxo */
+.wrapper{
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    width:800px;
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.form-container{
+    width: 50%;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.form-container h2{
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+}
+
+.form-container input:focus{
+    border: 2px solid #764ba2;
+    outline: none;
+}
+
+.form-container button.submit-btn{
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(to right, #568cf0f3, #3d404dad);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container button.submit-btn:hover{
+    background: linear-gradient(to left, #568cf0f3, #3d404dad);
+}
+
+.switch-btn{
+    padding:  8px 25px;
+    color: white;
+    width: 70px;
+}
+
+a{
+    text-decoration: none;
+    padding:  8px 18px;
+    color: white;
+    width: 70px;
+}
+
+.toggle-container{
+    width: 50%;
+    background: linear-gradient(to bottom right, #568cf0f3, #3d404dad);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.toggle-container h2{
+    margin-bottom: 20px;
+}
+
+.toggle-container p{
+    margin-bottom: 20px;
+}
+
+.toggle-container button.switch-btn{
+    padding: 8px 1px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 5px;
+    border: 2px solid white;
+}
+
+
+.toggle-container button.switch-btn:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*hide one form by default*/
+.form-container.signin{
+    display: none;
+}
+
+.wrapper.active .form-container.login{
+    display: none;
+}
+
+.wrapper.active .form-container.signin{
+    display:block;
+}
+
+/*esqueceu a palavra pass*/
+
+.forgot-password{
+    color: #764ba2;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    align-self: flex-start;
+    text-decoration: underline;
+}
+
+.forgot-password[disabled]{
+    opacity: 0.7;
+}
+
+.accept-terms {
+    margin: 10px 0 0 0;
+    font-size: 0.9rem;
+    user-select: none;
+}
+
+.accept-terms input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+/*Social buttons Containe*/
+.social-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.social-btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn svg{
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3 ease;
+}
+
+/*Google*/
+.social-btn.google svg{
+    fill: #db4437;
+}
+
+.social-btn.google:hover{
+    background-color: #db4437;
+}
+
+.social-btn.google:hover svg{
+    fill: white;
+}
+
+/*Facebook*/
+.social-btn.facebook svg{
+    fill: #1877f2;
+}
+
+.social-btn.facebook:hover{
+    background-color: #1877f2;
+}
+
+.social-btn.social-btn.facebook:hover svg{
+    fill: white;
+}
+
+/*GitHub*/
+.social-btn.github svg{
+    fill: #333;
+}
+
+.social-btn.github:hover{
+    background-color: #333;
+}
+
+.social-btn.github:hover svg{
+    fill: white;
+}
+
+/* X */
+.social-btn.x svg{
+    fill: #000000;
+}
+
+.social-btn.x:hover{
+    background-color: #000000;
+}
+
+.social-btn.x:hover svg{
+    fill: white;
+@media screen and (max-width:768px){
+    .wrapper{
+        flex-direction: column;
+    }
+}
+    .form-container,
+    .toggle-container{
+        width: 100%;
+    }
+
+    .toggle-container{
+        padding: 20px;
+    }
+}
+
+.error{
+    color: white;
+    background: red;
+    display: none;
+}
+
+
+

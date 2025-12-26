@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+
+<div class="wrapper" id="formWrapper">
+
+    <!-- Cadastro -->
+    <div class="form-container siginin">
+        <h2>Cadastro</h2>
+
+        <form onsubmit="return false;">
+
+            <input type="text" id="username" placeholder="Nome de Usuário">
+
+            <input type="email" id="email" placeholder="Email" onchange="onChangeEmail()">
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é inválido</div>
+
+            <input type="password" id="password" placeholder="Palavra pass" onchange="onChangePassword()">
+            <div class="error" id="password-required-error">Password é obrigatória</div>
+            <div class="error" id="password-min-lenght-error">Password deve ter no mínimo 6 caracteres</div>
+
+            <input type="password" id="confirmPassword" placeholder="Confirmar Palavra pass" onchange="onChangeConfirmPassword()">
+            <div class="error" id="password-doesnt-match-error">Password e Confirmar Password devem ser iguais</div>
+
+            <label class="accept-terms">
+                <input type="checkbox" id="terms" required> Eu aceito os termos
+            </label>
+
+            <button type="button" class="submit-btn" onclick="register()" disabled="true" id="register-button">
+                Criar
+            </button>
+
+        </form>
+    </div>
+
+    <!-- Toggle -->
+    <div class="toggle-container">
+        <h2 id="toggleHeading">Já tem uma conta?</h2>
+        <p id="toggleText">Entre para começar!</p>
+        <button class="switch-btn" id="toggle-btn">Entrar</button>
+    </div>
+</div>
+
+
+<!-- Firebase -->
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore-compat.js"></script>
+<script src="../services/firebase.js"></script>
+
+
+<!-- Toggle JS -->
+<script>
+    const wrapper = document.getElementById("formWrapper");
+    const toggleBtn = document.getElementById("toggle-btn");
+
+    toggleBtn.addEventListener("click", () => {
+        window.location.href = "login.html"; 
+    });
+</script>
+
+<!-- Cadastro lógico -->
+<script src="validations.js"></script>
+<script src="../loading.js"></script>
+<script src="cadastro.js"></script>
+
+</body>
+</html>

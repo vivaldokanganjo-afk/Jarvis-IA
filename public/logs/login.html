@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+
+<div class="wrapper" id="formWrapper">  
+
+    <!-- Login -->
+    <div class="form-container login">
+        <h2>Login</h2>
+
+        <form onsubmit="return false;">
+            <input type="email" id="email" placeholder="Email, username..." onchange="onChangeEmail()">
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é invalido</div>
+
+            <input type="password" id="password" placeholder="Palavra pass" onchange="onChangePassword()">
+            <div class="error" id="password-required-error">Password é obrigatória</div>
+
+            <button type="button" disabled="true" class="submit-btn" id="login-button" onclick="login()">Login</button>
+
+            <button class="forgot-password" disabled="true" id="recover-password-button" tabindex="0" onclick="recoverPassword()">Esqueceu a palavra Pass?</button>
+        </form>
+    </div>
+    
+
+    <!-- toggle -->
+    <div class="toggle-container">
+        <h2 id="toggleHeading">Não tem uma conta?</h2>
+        <p id="toggleText">Crie uma para começar!</p>
+        <button class="switch-btn" id="toggle-btn">
+            <a href="cadastro.html">Criar</a>
+        </button>
+    </div>
+
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-auth-compat.js"></script>
+<script src="../services/firebase.js"></script>
+
+<script src="validations.js"></script>
+<script src="../loading.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

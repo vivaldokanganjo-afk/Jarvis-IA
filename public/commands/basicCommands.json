@@ -1,0 +1,40 @@
+{
+  "hora": {
+    "keywords": [
+      "que horas são",
+      "qual é a hora",
+      "hora atual",
+      "horas agora",
+      "me diz a hora",
+      "hora"
+    ]
+  },
+
+  "data": {
+    "keywords": [
+      "que dia é hoje",
+      "data de hoje",
+      "dia de hoje",
+      "hoje é que dia"
+    ]
+  },
+
+  "fuso": {
+    "keywords": [
+      "fuso horário",
+      "meu fuso",
+      "qual é meu fuso horário",
+      "zona horária"
+    ]
+  },
+
+  "saudacao": {
+    "keywords": [
+      "olá",
+      "oi",
+      "bom dia",
+      "boa tarde",
+      "boa noite"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+ - ouvir comandos de voz
+ - executar ação com base no comando
+ - responder por voz
+ - mostrar logs ou interface de interação
+ - integrar com OpenAI ou outro serviço de IA
+ - salvar dados do usuario(lembretes)
+
+
+ - adicionar cache
